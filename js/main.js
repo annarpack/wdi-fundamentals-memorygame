@@ -1,19 +1,43 @@
 
 
 
-var cards = [];
-cards[0] = "queen";
-cards[1] = "queen";
-cards[2] = "king";
-cards[3] = "king";
+
+var cards = [
+	{
+		rank: 'queen',
+		suit: 'hearts',
+		cardImage: "images/queen-of-hearts.png"
+
+	},
+	{
+		rank: 'queen',
+		suit: 'hearts',
+		cardImage: "images/queen-of-diamonds.png"
+
+	},
+	{
+		rank: 'king',
+		suit: 'hearts',
+		cardImage: "images/king-of-hearts.png"
+
+	},
+	{
+		rank: 'king',
+		suit: 'hearts',
+		cardImage: "images/king-of-diamonds.png"
+
+	}
+
+];
 
 var cardsInPlay = [];
 var cardId;
 
 function flipCard(cardId) {
 	
-console.log("User flippd " + cards[cardId]);
-cardsInPlay.push(cards[cardId]);
+console.log("User flippd " + cards[cardId].rank + " of " + cards[cardId].suit);
+cardsInPlay.push(cards[cardId].rank);
+console.log(cards[cardId].cardImage)
 
 }
 
@@ -35,3 +59,4 @@ if (cardsInPlay.length === 2) {
 
 }
 }
+checkForMatch();
