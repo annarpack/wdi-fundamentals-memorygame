@@ -81,6 +81,11 @@ img {
 	margin: 40px 8px 40px 8px;
 }
 
+.board {
+	display: block;
+	min-height: 400px;
+}
+
 footer {
 	text-transform: uppercase;
 	padding: 0 20px 0 20px;
@@ -103,6 +108,7 @@ footer .name {
 	font-weight: 700;
 
 }
+/*
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -110,4 +116,10 @@ footer .name {
 	height: 0;
 	font-size: 0;
 
+}
+*/
+.box-1 {
+    background-color: red;
+    height: 100px;
+    width: 300px;
 }
